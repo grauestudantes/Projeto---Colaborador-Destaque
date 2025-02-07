@@ -14,3 +14,9 @@ Um site para destacar colaboradores e membros de equipes, com foco em reconhecer
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/seu-usuario/projeto-colaborador-destaque.git
+
+
+## 🖥️ Responsáveis
+
+- **João Pedro Rosa dos Santos:**
+- **Mateus**
