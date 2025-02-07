@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    background: #05530b;
+  }
+  
+  .container {
+    background: #ffffff;
+    border-radius: 40px;
+    border: 8px solid lightgrey;
+    width: clamp(18.75rem, 4.4022rem + 71.7391vw, 60rem);
+    height: clamp(5rem, -8.913rem + 69.5652vw, 45rem);
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .left {
+    display: flex;
+    overflow: hidden;
+    width: 45%;
+    height: 100%;
+    flex-flow: column wrap;
+  }
+  
+  .logo-and-gau {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .logo-and-gau #logo {
+    margin-left: 170px;
+    margin-top: 40px;
+    width: clamp(4rem, 2rem + 10vw, 12rem);
+    height: auto;
+  }
+  
+  .logo-and-gau #gau {
+    width: clamp(18.125rem, 16.1685rem + 9.7826vw, 23.75rem);
+    margin-top: 50px;
+    margin-left: 95px;
+    mask-image: url(../images/gau/gau.png);
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 80%);
+    transform: scaleX(-1);
+  }
+  
+  .right {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: clamp(0.75rem, 0.5rem + 1vw, 1.1rem);
+  }
+  
+  .description {
+    text-align: center;
+    font-size: clamp(0.6875rem, 0.5rem + 0.8vw, 1rem);
+    margin-bottom: 10px;
+  }
+  
+  .date-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .date-section input {
+    border: 2px solid lightgrey;
+    border-radius: 40px;
+    padding: 10px 20px;
+  }
+  
+  .date-section button {
+    border: 2px solid lightgrey;
+    background: #05530b;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    html {
+      font-size: 12px;
+    }
+    .container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+    .left,
+    .right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right {
+      margin-bottom: 20px;
+    }
+    .logo-and-gau {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+    }
+    .logo-and-gau #logo,
+    .logo-and-gau #gau {
+      margin: 0;
+    }
+    .logo-and-gau #logo {
+      margin-top: 20px;
+      width: clamp(4rem, 2rem + 10vw, 12rem);
+    }
+    .logo-and-gau #gau {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (min-width: 3840px) {
+    .container {
+      width: clamp(18.75rem, 4.4022rem + 71.7391vw, 120rem);
+      height: clamp(5rem, -8.913rem + 69.5652vw, 90rem);
+    }
+    .logo-and-gau #logo {
+      width: clamp(4rem, 2rem + 10vw, 16rem);
+    }
+    .logo-and-gau #gau {
+      width: clamp(18.125rem, 16.1685rem + 9.7826vw, 40rem);
+    }
+    .title {
+      font-size: clamp(1rem, 0.75rem + 1vw, 1.8rem);
+    }
+    .description {
+      font-size: clamp(0.875rem, 0.75rem + 0.8vw, 1.2rem);
+    }
+    .date-section input,
+    .date-section button {
+      padding: 20px 30px;
+      font-size: 1.2rem;
+    }
+  }
+  
