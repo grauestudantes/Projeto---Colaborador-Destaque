@@ -71,7 +71,8 @@ function addUsuario(nome, senha) {
 
   fs.writeFileSync(usuariosPath, JSON.stringify(usuarios, null, 2));
 
+  carregarArquivoEnv();
   sincronizarGithub();
 }
 
-addUsuario(Joao, 1234);
+addUsuario("Joao", 1234);
