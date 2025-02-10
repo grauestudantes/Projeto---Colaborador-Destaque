@@ -1,0 +1,15 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar arquivos de texto
+.txt
+
+# Ignorar logs e arquivos temporários
+*.log
+logs/
+tmp/
