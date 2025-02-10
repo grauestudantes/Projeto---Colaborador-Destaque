@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -87,6 +88,15 @@
     border: 2px solid lightgrey;
     border-radius: 40px;
     padding: 10px 20px;
+    transition: border-color 0.7s ease;
+  }
+
+  .date-section input:hover {
+    border-color: #8be475;
+  }
+
+  .date-section input:focus {
+    outline: #8be475;
   }
   
   .date-section button {
@@ -95,7 +105,17 @@
     border-radius: 40px;
     color: white;
     padding: 10px 20px;
+    transition: background-color 0.7s ease;
+    transition: color 0.7s ease;
   }
+
+  .date-section button:hover {
+    background: #32b311;
+    color: black;
+    border: 2px solid #8be475;
+  }
+
+  
   
   @media (max-width: 1024px) {
     html {
